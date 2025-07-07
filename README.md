@@ -25,7 +25,7 @@ Ensure you have the following installed on your system:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/saijayanth59/stock_tracker_api
+git clone https://github.com/venkataPhanindraVutla/stock_tracker_api
 cd stock_tracker_api
 ```
 
@@ -136,3 +136,26 @@ Full documentation available at [docs/watchlist](./docs/watchlist.md).
 ---
 
 For detailed endpoint usage, visit the `docs/<route-name>` folder within the project.
+
+
+## Running with Docker Compose
+
+To run this application using Docker Compose, follow these steps:
+
+1.  **Navigate to the directory:**
+
+    Use the `cd` command to change your current directory to the location where your `docker-compose.yaml` file is stored (i.e. `stock-history-api`).
+2.  **Run the command:**
+
+    Execute `docker compose up` (or `docker-compose up` if you have an older version) in the terminal. This command will:
+
+    *   Read the `docker-compose.yaml` file: It parses the file to understand the services, networks, volumes, and other configurations defined within.
+    *   Build images (if necessary): If any services are based on a Dockerfile, Docker Compose will build those images first.
+    *   Create containers: It creates and starts the containers for each service defined in the `docker-compose.yaml` file.
+    *   Create networks and volumes: It also sets up the necessary networks and volumes as specified in the file.
+3.  **Detached mode (optional):**
+
+    If you want the containers to run in the background, add the `-d` flag: `docker compose up -d`. This detaches the terminal, allowing you to continue using it for other tasks.
+4.  **Stopping the application:**
+
+    To stop the application, use `docker compose down`. This will stop and remove the containers, networks, and volumes created by `docker compose up`.
