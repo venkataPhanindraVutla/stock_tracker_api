@@ -8,7 +8,7 @@ This project is a RESTful API built using Node.js, Express, and MongoDB. It incl
 
 ## Deployment Details
 
-- **URL:** [API Base URL](https://stock-tracker-api.onrender.com/)
+- **URL:** [API Base URL](https://stock-tracker-api-71t4.onrender.com)
 - **Deployed Environment:** [render](https://render.com/)
 
 ---
@@ -71,7 +71,7 @@ All endpoints are prefixed with `/api`. Below are the available routes and their
 
 ### Base URL
 
-`http://https://stock-tracker-api.onrender.com/api`
+`https://stock-tracker-api-71t4.onrender.com/api`
 
 ### User Routes
 
